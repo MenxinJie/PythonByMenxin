@@ -28,35 +28,20 @@ days=int(input('您要查找几天之后？请告诉我：'))
 res=(days%7)+today
 if res>6:
     res-=6
-    if res==0:
-        print('%d天之后是星期日'%days)
-    elif res==1:
-        print('%d天之后是星期一'%days)
-    elif res==2:
-        print('%d天之后是星期二'%days)
-    elif res==3:
-        print('%d天之后是星期三'%days)
-    elif res==4:
-        print('%d天之后是星期四'%days)
-    elif res==5:
-        print('%d天之后是星期五'%days)
-    else:
-        print('%d天之后是星期六'%days)
+if res==0:
+    print('%d天之后是星期日'%days)
+elif res==1:
+    print('%d天之后是星期一'%days)
+elif res==2:
+    print('%d天之后是星期二'%days)
+elif res==3:
+    print('%d天之后是星期三'%days)
+elif res==4:
+    print('%d天之后是星期四'%days)
+elif res==5:
+    print('%d天之后是星期五'%days)
 else:
-    if res==0:
-        print('%d天之后是星期日'%days)
-    elif res==1:
-        print('%d天之后是星期一'%days)
-    elif res==2:
-        print('%d天之后是星期二'%days)
-    elif res==3:
-        print('%d天之后是星期三'%days)
-    elif res==4:
-        print('%d天之后是星期四'%days)
-    elif res==5:
-        print('%d天之后是星期五'%days)
-    else:
-        print('%d天之后是星期六'%days)
+    print('%d天之后是星期六'%days)
 
 # 4.
 a,b,c=map(int,input('请输入三个整数：').split(','))
